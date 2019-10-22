@@ -1,4 +1,4 @@
-﻿// MIT license
+﻿// MIT license (https://nvjob.github.io/mit-license)
 // (c) 2016 #NVJOB Nicholas Veselov - https://nvjob.github.io
 // #NVJOB Simple Pool v1.2 - https://nvjob.github.io/unity/nvjob-simple-pool.html
 
@@ -14,58 +14,60 @@ using System.Collections.Generic;
 public class SimplePool : MonoBehaviour
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
+
 
     public List<ObjectsPool> ObjectsList = new List<ObjectsPool>();
 
     //--------------
 
-    static Transform stThisTransform;
-    static int[] stNumberObjects;
+    static Transform thisTransform;
+    static int[] numberObjects;
     static GameObject[][] stObjects;
-    
+    static public int numObjectsList;
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
 
-    private void Awake()
+
+    void Awake()
     {
         //--------------
 
-        stThisTransform = transform;
+        thisTransform = transform;
+        numObjectsList = ObjectsList.Count;
         AddObjectsToPool();
 
         //--------------
     }
-    
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
 
-    private void AddObjectsToPool()
+
+    void AddObjectsToPool()
     {
         //--------------
 
-        stNumberObjects = new int[ObjectsList.Count];
-        stObjects = new GameObject[ObjectsList.Count][];
+        numberObjects = new int[numObjectsList];
+        stObjects = new GameObject[numObjectsList][];
 
         //--------------
 
-        for (int num = 0; num < ObjectsList.Count; num++)
+        for (int num = 0; num < numObjectsList; num++)
         {
-            stNumberObjects[num] = ObjectsList[num].numberObjects;
-            stObjects[num] = new GameObject[stNumberObjects[num]];
+            numberObjects[num] = ObjectsList[num].numberObjects;
+            stObjects[num] = new GameObject[numberObjects[num]];
             InstanInPool(ObjectsList[num].obj, stObjects[num]);
         }
 
         //--------------
     }
-    
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
 
-    static private void InstanInPool(GameObject obj, GameObject[] objs)
+
+    static void InstanInPool(GameObject obj, GameObject[] objs)
     {
         //--------------
 
@@ -73,36 +75,38 @@ public class SimplePool : MonoBehaviour
         {
             objs[i] = Instantiate(obj);
             objs[i].SetActive(false);
-            objs[i].transform.parent = stThisTransform;
+            objs[i].transform.parent = thisTransform;
         }
 
         //--------------
     }
-    
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
 
-    static public GameObject GiveObj(int num)
+
+    static public GameObject GiveObj(int numElement)
     {
         //--------------
 
-        for (int i = 0; i < stNumberObjects[num]; i++) if (!stObjects[num][i].activeSelf) return stObjects[num][i];
+        for (int i = 0; i < numberObjects[numElement]; i++) if (!stObjects[numElement][i].activeSelf) return stObjects[numElement][i];
+
+        Debug.Log("Objects in the pool are over!");
         return null;
 
         //--------------
     }
-    
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
+
 
     static public void Takeobj(GameObject obj)
     {
         //--------------
 
-        obj.SetActive(false);
-        if (obj.transform.parent != stThisTransform) obj.transform.parent = stThisTransform;
+        if (obj.activeSelf) obj.SetActive(false);
+        if (obj.transform.parent != thisTransform) obj.transform.parent = thisTransform;
 
         //--------------
     }
@@ -121,11 +125,11 @@ public class SimplePool : MonoBehaviour
 public class ObjectsPool
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
+
 
     public GameObject obj;
     public int numberObjects = 100;
-    
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
