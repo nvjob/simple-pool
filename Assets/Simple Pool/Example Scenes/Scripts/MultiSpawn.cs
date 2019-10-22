@@ -64,6 +64,7 @@ public class MultiSpawn : MonoBehaviour
         while (true)
         {
             yield return delay0;
+            thisTransform.rotation = Random.rotation;
 
             for (int z = 0; z < amountObj; z++)
             {
