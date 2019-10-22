@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: SkyBox Two Colors
+  m_Shader: {fileID: 4800000, guid: 5b29698c3222b474aba5b110ddff78c5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -61,10 +61,14 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.98
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0.77
+    - _IntensityA: 1
+    - _IntensityB: 1.1
+    - _Metallic: 0
     - _Mode: 0
+    - _NoiseIntensity: 1
+    - _NoiseScale: 250
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -73,5 +77,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.9879162, b: 0.9481132, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorA: {r: 0.04299164, g: 0, b: 0.078431375, a: 0}
+    - _ColorB: {r: 0.064974174, g: 0, b: 0.14117648, a: 0}
+    - _DirA: {r: 0, g: 10.4, b: -5.49, a: 0}
+    - _DirB: {r: 0, g: -0.3, b: 9.4, a: -0.03}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

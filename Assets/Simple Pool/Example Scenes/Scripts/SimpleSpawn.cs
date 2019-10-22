@@ -46,7 +46,7 @@ public class SimpleSpawn : MonoBehaviour
 
             GameObject obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList)); // Pool gives object. Instead of using - GameObject obj = Instantiate(Object)
 
-            obj.transform.SetPositionAndRotation(thisTransform.position, thisTransform.rotation);
+            obj.transform.SetPositionAndRotation(thisTransform.position, Random.rotation);
             obj.transform.parent = thisTransform;
 
             obj.SetActive(true); // After all the transformations of the object, activate it.
