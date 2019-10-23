@@ -75,7 +75,11 @@ public class MultiSpawn : MonoBehaviour
                         yield return null;
 
                         int randomObj = Random.Range(0, SimplePool.numObjectsList);
-                        GameObject obj = SimplePool.GiveObj(randomObj); // Pool gives object. Instead of using - GameObject obj = Instantiate(Object)
+
+                        // SimplePool.GiveObj() - pool gives object.
+                        // Instead of using - GameObject obj = Instantiate(Object).
+                        // SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (SimplePool).
+                        GameObject obj = SimplePool.GiveObj(randomObj);
 
                         if (obj != null)
                         {
@@ -85,8 +89,10 @@ public class MultiSpawn : MonoBehaviour
                             float st = objPoolScale * 0.5f - 0.5f;
                             float ot = objPoolScale * crackScale;
                             obj.transform.localPosition = new Vector3(st + x * ot, st + y * ot, st + z * ot);
-                            obj.SetActive(true); // After all the transformations of the object, activate it.
                             childList.Add(obj);
+
+                            // After all the transformations of the object, activate it.
+                            obj.SetActive(true);
                         }
                     }
                 }
@@ -98,7 +104,9 @@ public class MultiSpawn : MonoBehaviour
             {
                 yield return null;
 
-                SimplePool.Takeobj(childList[n]); // Оbject is returned to the pool. Instead of using - Destroy(Object)
+                // SimplePool.Takeobj() - object is returned to the pool. Instead of using - Destroy(Object).
+                // SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned to the pool.
+                SimplePool.Takeobj(childList[n]);
             }
 
             childList = new List<GameObject>();
