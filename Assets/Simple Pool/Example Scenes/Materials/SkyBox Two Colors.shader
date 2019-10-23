@@ -32,8 +32,21 @@ _NoiseIntensity("Noise Intensity", Float) = 1
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-CGINCLUDE
+SubShader {
+Tags { "RenderType" = "Background" "Queue" = "Background" }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Pass {
+//----------------------------------------------
+
+ZWrite Off
+Cull Off
+Fog { Mode Off }
+CGPROGRAM
+#pragma fragmentoption ARB_precision_hint_fastest
+#pragma vertex vert
+#pragma fragment frag
 #include "UnityCG.cginc"
 
 //----------------------------------------------
@@ -53,10 +66,8 @@ float4 worldpos : any;
 
 //----------------------------------------------
 
-half4 _ColorA, _ColorB;
-half4 _DirA, _DirB;
+half4 _ColorA, _ColorB, _DirA, _DirB;
 half _NoiseScale, _NoiseIntensity, _IntensityA, _IntensityB;
-
 
 //----------------------------------------------
 
@@ -72,40 +83,20 @@ return o;
 
 half4 frag(v2f i) : COLOR{
 float2 wc = (i.worldpos.xy / i.worldpos.w) * _NoiseScale;
-float4 dither = (dot(float2(171.0f, 231.0f), wc.xy));
-dither.rgb = frac(dither / float3(103.0f, 71.0f, 97.0f)) - float3(0.5f, 0.5f, 0.5f);
-half d = dot(normalize(i.texcoord), _DirA) * (0.11f + _DirA.w) + _IntensityA;
-half d2 = dot(normalize(i.texcoord), _DirB) * (0.11f + _DirB.w) + _IntensityB;
-return (lerp(_ColorA, _ColorB, pow(d * d2, 2))) + (dither / 255.0f) * _NoiseIntensity;
+float4 dt = (dot(float2(171.0f, 231.0f), wc.xy));
+dt.rgb = frac(dt / float3(103.0f, 71.0f, 97.0f)) - float3(0.5f, 0.5f, 0.5f);
+half da = dot(normalize(i.texcoord), _DirA) * (0.11f + _DirA.w) + _IntensityA;
+half db = dot(normalize(i.texcoord), _DirB) * (0.11f + _DirB.w) + _IntensityB;
+return (lerp(_ColorA, _ColorB, pow(da * db, 2))) + (dt / 255.0f) * _NoiseIntensity;
 }
 
 //----------------------------------------------
 
 ENDCG
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-SubShader {
-//----------------------------------------------
-
-Tags { "RenderType" = "Background" "Queue" = "Background" }
-
-Pass {
-ZWrite Off
-Cull Off
-Fog { Mode Off }
-CGPROGRAM
-#pragma fragmentoption ARB_precision_hint_fastest
-#pragma vertex vert
-#pragma fragment frag
-ENDCG
 }
 
-//----------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
