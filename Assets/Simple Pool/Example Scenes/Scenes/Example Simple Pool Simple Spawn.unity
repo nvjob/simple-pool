@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 71347501}
   - component: {fileID: 71347500}
   m_Layer: 0
-  m_Name: Simple Pool
+  m_Name: SimplePool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

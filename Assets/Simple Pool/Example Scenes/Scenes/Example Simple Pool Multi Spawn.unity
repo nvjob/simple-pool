@@ -121,58 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &71347499
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 71347501}
-  - component: {fileID: 71347500}
-  m_Layer: 0
-  m_Name: Simple Pool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &71347500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71347499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c86e9e68cb890724e8841ec8e8c0b704, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectsList:
-  - obj: {fileID: 4239888589029651943, guid: 68c6296cb4e724a4498a3f0a7aff84bb, type: 3}
-    numberObjects: 1200
-  - obj: {fileID: 4239888589029651943, guid: d61e18b7c4f16e948b911440117ad619, type: 3}
-    numberObjects: 1200
-  - obj: {fileID: 4239888589029651943, guid: ce4a701eed2ea3644b3566e0dc8d2d6a, type: 3}
-    numberObjects: 1200
-  - obj: {fileID: 4239888589029651943, guid: b7612e2893d718b4ca42f8f5b70aa72e, type: 3}
-    numberObjects: 1200
---- !u!4 &71347501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71347499}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &295543569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 5264664066239097461, guid: d97b899f4f65c9547850ad37b9e86957,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5264664066239097465, guid: d97b899f4f65c9547850ad37b9e86957,
         type: 3}
@@ -637,6 +585,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1703425708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703425710}
+  - component: {fileID: 1703425709}
+  m_Layer: 0
+  m_Name: SimplePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1703425709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703425708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86e9e68cb890724e8841ec8e8c0b704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectsList:
+  - obj: {fileID: 4239888589029651943, guid: 68c6296cb4e724a4498a3f0a7aff84bb, type: 3}
+    numberObjects: 1200
+  - obj: {fileID: 4239888589029651943, guid: d61e18b7c4f16e948b911440117ad619, type: 3}
+    numberObjects: 1200
+  - obj: {fileID: 4239888589029651943, guid: ce4a701eed2ea3644b3566e0dc8d2d6a, type: 3}
+    numberObjects: 1200
+  - obj: {fileID: 4239888589029651943, guid: b7612e2893d718b4ca42f8f5b70aa72e, type: 3}
+    numberObjects: 1200
+--- !u!4 &1703425710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703425708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904630572
 GameObject:
   m_ObjectHideFlags: 0
