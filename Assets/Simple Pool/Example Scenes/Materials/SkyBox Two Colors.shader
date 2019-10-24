@@ -1,6 +1,6 @@
 ﻿// MIT license
 // Copyright (c) 2016 #NVJOB Nicholas Veselov - https://nvjob.github.io
-// SkyBox Two Colors V1.1 - https://nvjob.github.io/unity/skyBox-two-colors
+// SkyBox Two Colors V1.1.1 - https://nvjob.github.io/unity/skyBox-two-colors
 
 
 Shader "#NVJOB/SkyBox/Two Colors" {

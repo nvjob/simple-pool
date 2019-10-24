@@ -81,7 +81,7 @@ public class MultiSpawn : MonoBehaviour
                         // SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (SimplePool).
                         GameObject obj = SimplePool.GiveObj(randomObj);
 
-                        if (obj != null)
+                        if (obj != null) // Checking that the pool is not empty.
                         {
                             obj.transform.SetPositionAndRotation(thisTransform.position, Random.rotation);
                             obj.transform.parent = thisTransform;

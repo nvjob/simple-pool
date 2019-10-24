@@ -1,6 +1,6 @@
 ﻿// MIT license - https://nvjob.github.io/mit-license
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
-// NVJOB Specular Customizable Shaders V1.1 - https://github.com/nvjob/nvjob-specular-customizable-shaders
+// NVJOB Specular Customizable Shaders V1.1.1 - https://github.com/nvjob/nvjob-specular-customizable-shaders
 
 
 Shader "#NVJOB/SCS/Normalmap, Reflection, Cull Off" {

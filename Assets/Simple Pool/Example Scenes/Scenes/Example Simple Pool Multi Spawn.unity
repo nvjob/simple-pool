@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 5264664066239097461, guid: d97b899f4f65c9547850ad37b9e86957,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5264664066239097465, guid: d97b899f4f65c9547850ad37b9e86957,
         type: 3}
@@ -346,6 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723610759}
   - component: {fileID: 723610760}
+  - component: {fileID: 723610761}
   m_Layer: 0
   m_Name: Multi Spawn
   m_TagString: Untagged
@@ -381,6 +382,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crackScale: 1.5
   amountObj: 15
+--- !u!114 &723610761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723610758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877a010e43122f74c9a2f40b9a8569f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rot: -3
 --- !u!1 &945842856
 GameObject:
   m_ObjectHideFlags: 0
