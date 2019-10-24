@@ -10,13 +10,26 @@ The pool allows you to completely abandon Instantiate and Destroy after initiali
 
 
 
+#### Example script. How to get an object from the pool.
 ```
-  GameObject obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList)); 
-  obj.transform.SetPositionAndRotation(thisTransform.position, Random.rotation);
-  obj.transform.parent = thisTransform;
-  obj.SetActive(true);
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        GameObject obj = SimplePool.GiveObj(0);
+        //obj.transform.SetPositionAndRotation(transform.position, Random.rotation);
+        //obj.transform.parent = transform;
+        obj.SetActive(true);
+    }
+}
 ```
 
+#### Example script. How to return an object to the pool, remove from the scene.
+```
+
+```
 
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
