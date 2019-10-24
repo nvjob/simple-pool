@@ -8,6 +8,17 @@ The pool allows you to completely abandon Instantiate and Destroy after initiali
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.gif)
 
+
+
+```
+  GameObject obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList)); 
+  obj.transform.SetPositionAndRotation(thisTransform.position, Random.rotation);
+  obj.transform.parent = thisTransform;
+  obj.SetActive(true);
+```
+
+
+
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
 
 -------------------------------------------------------------------
