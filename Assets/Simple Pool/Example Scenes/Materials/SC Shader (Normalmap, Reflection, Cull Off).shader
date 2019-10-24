@@ -1,6 +1,6 @@
 ﻿// MIT license - https://nvjob.github.io/mit-license
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
-// #NVJOB SC Shaders v1.3 - https://nvjob.github.io/unity/nvjob-sc-shaders.html
+// #NVJOB SC Shaders v1.3 - https://nvjob.github.io/unity/nvjob-sc-shaders
 
 
 Shader "#NVJOB/SC Shaders/Only Reflection, Cull Off" {
