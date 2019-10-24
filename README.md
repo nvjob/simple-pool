@@ -18,12 +18,14 @@ Getting an object from a pool:
 ```
 GameObject obj = SimplePool.GiveObj(0);
 ```
-
-#### How to return an object to the pool, remove from the scene.
+After all the transformations of the object, activate it:
+```
+obj.SetActive(true);
+```
+Return object to the pool, remove from the scene:
 ```
 SimplePool.Takeobj(obj);
 ```
-
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
 
