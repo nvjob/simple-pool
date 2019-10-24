@@ -60,6 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _BiasNormal: 0.85
     - _Brightness: 0.1
     - _BumpScale: 1
     - _Contrast: 1.1
@@ -69,7 +70,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.98
     - _GlossyReflections: 1
-    - _IntensityNm: 1
+    - _IntensityNm: 0.85
     - _IntensityRef: 2
     - _Metallic: 0.77
     - _Mode: 0
