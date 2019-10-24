@@ -14,22 +14,22 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 
 ### Information
 
-##### Getting an object from a pool:
+#### Getting an object from a pool:
 ```
 GameObject obj = SimplePool.GiveObj(0);
 ```
 SimplePool.GiveObj() instead of using Instantiate(Object).<br>
 SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (SimplePool).
 
-After all the transformations of the object, activate it:
+#### After all the transformations of the object, activate it:
 ```
 obj.SetActive(true);
 ```
-Return object to the pool, remove from the scene:
+#### Return object to the pool, remove from the scene:
 ```
 SimplePool.Takeobj(obj);
 ```
-The number of elements in the editor (SimplePool):
+#### The number of elements in the editor (SimplePool):
 ```
 SimplePool.numObjectsList
 ```
