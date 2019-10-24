@@ -14,8 +14,10 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 
 ### Information
 
-Getting an object from a pool.
-```GameObject obj = SimplePool.GiveObj(0);```
+Getting an object from a pool:
+```
+GameObject obj = SimplePool.GiveObj(0);
+```
 
 #### How to return an object to the pool, remove from the scene.
 ```
