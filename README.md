@@ -39,6 +39,34 @@ SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned t
 SimplePool.numObjectsList
 ```
 
+#### Example script:
+```
+using UnityEngine;
+
+public class SimpleSpawn : MonoBehaviour
+{
+    GameObject obj;
+
+    void Start()
+    {
+        if(SimplePool.numObjectsList == 0) obj = SimplePool.GiveObj(0);
+        else obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList));
+        if (obj != null)
+        {
+            obj.transform.SetPositionAndRotation(transform.position, transform.rotation);
+            obj.transform.parent = transform;
+            obj.SetActive(true);
+            Invoke("DestroyObject", 5);
+        }
+    }
+
+    void DestroyObject()
+    {
+        SimplePool.Takeobj(obj);
+    }
+}
+```
+
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
 
 -------------------------------------------------------------------
