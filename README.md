@@ -51,7 +51,7 @@ If the pool is empty it will return null.
 ```
 using UnityEngine;
 
-public class SimpleSpawn : MonoBehaviour
+public class Example : MonoBehaviour
 {
     GameObject obj;
 
