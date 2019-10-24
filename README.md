@@ -38,6 +38,13 @@ SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned t
 ```
 SimplePool.numObjectsList
 ```
+#### Checking that the pool is not empty:
+```
+if (obj != null)
+{
+}
+```
+If the pool is empty it will return null.
 
 #### Example script:
 ```
