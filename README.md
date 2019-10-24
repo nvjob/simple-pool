@@ -18,6 +18,9 @@ Getting an object from a pool:
 ```
 GameObject obj = SimplePool.GiveObj(0);
 ```
+SimplePool.GiveObj() instead of using Instantiate(Object).<br>
+SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (SimplePool).
+
 After all the transformations of the object, activate it:
 ```
 obj.SetActive(true);
@@ -25,6 +28,10 @@ obj.SetActive(true);
 Return object to the pool, remove from the scene:
 ```
 SimplePool.Takeobj(obj);
+```
+The number of elements in the editor (SimplePool):
+```
+SimplePool.numObjectsList
 ```
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
