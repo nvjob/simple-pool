@@ -40,6 +40,7 @@ SimplePool.numObjectsList
 ```
 #### Checking that the pool is not empty:
 ```
+GameObject obj = SimplePool.GiveObj(0);
 if (obj != null)
 {
 }
