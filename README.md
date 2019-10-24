@@ -28,7 +28,7 @@ public class Example : MonoBehaviour
 
 #### Example script. How to return an object to the pool, remove from the scene.
 ```
-
+SimplePool.Takeobj(obj);
 ```
 
 
