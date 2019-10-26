@@ -77,7 +77,7 @@ public class Example : MonoBehaviour
 
 https://www.youtube.com/watch?v=fhuhPnpSoJU
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.png)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.jpg)
 
 -------------------------------------------------------------------
 
