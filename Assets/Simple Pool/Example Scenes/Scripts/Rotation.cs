@@ -14,7 +14,16 @@ public class Rotation : MonoBehaviour
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    public float rot = 1;
+    public float rotSpeedAll = 3;
+    [Space(10)]
+    public float rotSpeedX = 0.5f;
+    public float rotLengthX = 5;
+    [Space(10)]
+    public float rotSpeedY = 0.5f;
+    public float rotLengthY = 7;
+    [Space(10)]
+    public float rotSpeedZ = 0.5f;
+    public float rotLengthZ = 9;
 
     //--------------
 
@@ -40,7 +49,11 @@ public class Rotation : MonoBehaviour
     {
         //--------------
 
-        tr.Rotate(Vector3.up, rot * Time.deltaTime);
+        float timeTime = Time.time;
+        float rtx = Mathf.PingPong(rotSpeedX * timeTime, rotLengthX);
+        float rty = Mathf.PingPong(rotSpeedY * timeTime, rotLengthY);
+        float rtz = Mathf.PingPong(rotSpeedZ * timeTime, rotLengthZ);
+        tr.Rotate(new Vector3(rtx, rty, rtz), rotSpeedAll * Time.deltaTime);
 
         //--------------
     }

@@ -274,7 +274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 723610759}
   - component: {fileID: 723610760}
-  - component: {fileID: 723610761}
   m_Layer: 0
   m_Name: Simple Spawn
   m_TagString: Untagged
@@ -308,19 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca7113b83358a5419ac6f9a13aae1a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &723610761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723610758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 877a010e43122f74c9a2f40b9a8569f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rot: -3
 --- !u!1 &945842856
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +586,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877a010e43122f74c9a2f40b9a8569f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rot: 8
+  rotSpeedAll: 4
+  rotSpeedX: 0.3
+  rotLengthX: 7
+  rotSpeedY: 0.31
+  rotLengthY: 11
+  rotSpeedZ: 0.33
+  rotLengthZ: 15
 --- !u!82 &1943747085
 AudioSource:
   m_ObjectHideFlags: 0
@@ -620,7 +612,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 4
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -657,7 +649,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.4
       inSlope: 0
       outSlope: 0
       tangentMode: 0
