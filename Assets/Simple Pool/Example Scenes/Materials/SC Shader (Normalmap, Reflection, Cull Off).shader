@@ -1,4 +1,5 @@
-﻿// MIT license - https://nvjob.github.io/mit-license
+﻿// Copyright (c) 2016 Unity Technologies. MIT license - license_unity.txt
+// #NVJOB SC Shaders. MIT license - license_nvjob.txt
 // #NVJOB Nicholas Veselov - https://nvjob.github.io
 // #NVJOB SC Shaders v1.3 - https://nvjob.github.io/unity/nvjob-sc-shaders
 

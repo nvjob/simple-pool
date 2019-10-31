@@ -1,8 +1,4 @@
-﻿// MIT license (https://nvjob.github.io/mit-license)
-// #NVJOB Nicholas Veselov - https://nvjob.github.io
-
-
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 

@@ -1,5 +1,6 @@
-﻿// MIT license (https://nvjob.github.io/mit-license)
-// (c) 2016 #NVJOB Nicholas Veselov - https://nvjob.github.io
+﻿// Copyright (c) 2016 Unity Technologies. MIT license - license_unity.txt
+// #NVJOB Simple Pool. MIT license - license_nvjob.txt
+// #NVJOB Nicholas Veselov - https://nvjob.github.io
 // #NVJOB Simple Pool v1.2 - https://nvjob.github.io/unity/nvjob-simple-pool
 
 
