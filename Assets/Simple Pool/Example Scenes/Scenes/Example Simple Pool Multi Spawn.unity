@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI nvjob
       objectReference: {fileID: 0}
+    - target: {fileID: 5264664066239097461, guid: d97b899f4f65c9547850ad37b9e86957,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5264664066239097465, guid: d97b899f4f65c9547850ad37b9e86957,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -374,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eaa0794292bce946b729a7814e34485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crackScale: 1.5
+  crackScale: 2
   amountObj: 15
 --- !u!1 &945842856
 GameObject:
