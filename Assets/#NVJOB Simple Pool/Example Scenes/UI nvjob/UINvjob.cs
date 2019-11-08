@@ -24,11 +24,11 @@ public class UINvjob : MonoBehaviour
         //---------------------------------
 
         logo = transform.Find("Panel/logo").gameObject;
-        donation = transform.Find("Panel/donation").gameObject;
+        donation = transform.Find("Panel/support").gameObject;
         report = transform.Find("Panel/report").gameObject;
-        
+
         logo.GetComponent<Button>().onClick.AddListener(Logo);
-        donation.GetComponent<Button>().onClick.AddListener(Donation);
+        donation.GetComponent<Button>().onClick.AddListener(Support);
         report.GetComponent<Button>().onClick.AddListener(Report);
 
         StartCoroutine("_Rotation");
@@ -71,16 +71,16 @@ public class UINvjob : MonoBehaviour
     {
         //--------------
 
-        Application.OpenURL("https://nvjob.github.io/unity/nvjob-simple-pool.html");
+        Application.OpenURL("https://nvjob.github.io/unity/nvjob-simple-pool");
 
         //--------------
     }
 
-    void Donation()
+    void Support()
     {
         //--------------
 
-        Application.OpenURL("https://nvjob.github.io/donate");
+        Application.OpenURL("https://nvjob.github.io/support");
 
         //--------------
     }
