@@ -85,7 +85,7 @@ https://www.youtube.com/watch?v=fhuhPnpSoJU
 #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 #### License
-MIT License
+MIT License <br>
 Clarification of licenses - https://nvjob.github.io/mit-license
 
 #### Support
