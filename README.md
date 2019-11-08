@@ -1,6 +1,6 @@
 # #NVJOB Simple Pool
 
-Version 1.2
+Version 1.2.1
 
 This is a simple pool for optimizing object loading.<br>
 All objects in the pool are loaded during initialization, and then retrieved from the pool and returned back to the pool without sacrificing performance.<br>
