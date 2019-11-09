@@ -4,6 +4,7 @@
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.jpg)
 
 This is a simple pool for optimizing object loading.<br>
+Permanent creation and destruction of objects in your scene, very expensive in terms of memory management, use the Simple Pool object pool to save memory and improve performance.<br>
 All objects in the pool are loaded during initialization, and then retrieved from the pool and returned back to the pool without sacrificing performance.<br>
 The pool allows you to completely abandon Instantiate and Destroy after initialization.
 
