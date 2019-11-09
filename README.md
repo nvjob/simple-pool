@@ -13,8 +13,6 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 
 ### Information
 
-Video manual - [play video on youtube](https://www.youtube.com/watch?v=fhuhPnpSoJU)
-
 #### Getting an object from a pool:
 ```
 GameObject obj = SimplePool.GiveObj(0);
@@ -75,6 +73,9 @@ public class Example : MonoBehaviour
     }
 }
 ```
+
+#### Video manual:
+https://www.youtube.com/watch?v=fhuhPnpSoJU
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.jpg)
 
