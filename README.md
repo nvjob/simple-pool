@@ -8,6 +8,8 @@ The pool allows you to completely abandon Instantiate and Destroy after initiali
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.gif)
 
+-------------------------------------------------------------------
+
 ### Prerequisites
 
 To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
