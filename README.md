@@ -8,8 +8,6 @@ Permanent creation and destruction of objects in your scene, very expensive in t
 All objects in the pool are loaded during initialization, and then retrieved from the pool and returned back to the pool without sacrificing performance.<br>
 The pool allows you to completely abandon Instantiate and Destroy after initialization.
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.gif)
-
 ### Prerequisites
 
 To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
@@ -79,6 +77,8 @@ public class Example : MonoBehaviour
 
 #### Video manual:
 https://www.youtube.com/watch?v=fhuhPnpSoJU
+
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.gif)
 
 -------------------------------------------------------------------
 
