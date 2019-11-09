@@ -81,12 +81,10 @@ https://www.youtube.com/watch?v=fhuhPnpSoJU
 
 -------------------------------------------------------------------
 
-**Authors:** #NVJOB Nicholas Veselov https://nvjob.github.io
+**Authors:** [#NVJOB Nicholas Veselov](https://nvjob.github.io)
 
 **License:** MIT License. [Clarification of licenses](https://nvjob.github.io/mit-license)
 
-**Support:**<br>
-https://nvjob.github.io/support
+**Support:** https://nvjob.github.io/support
 
-**Report a Problem / Issue Tracker / FAQ:**<br>
-https://nvjob.github.io/reportaproblem
+**Report a Problem / Issue Tracker / FAQ:** https://nvjob.github.io/reportaproblem
