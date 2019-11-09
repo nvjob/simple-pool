@@ -13,7 +13,7 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 
 ### Information
 
-Video manual - https://www.youtube.com/watch?v=fhuhPnpSoJU
+Video manual - [youtube.com](https://www.youtube.com/watch?v=fhuhPnpSoJU)
 
 #### Getting an object from a pool:
 ```
