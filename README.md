@@ -85,6 +85,6 @@ https://www.youtube.com/watch?v=fhuhPnpSoJU
 
 **License:** MIT License. [Clarification of licenses](https://nvjob.github.io/mit-license)
 
-**Support:** https://nvjob.github.io/support
+**Support:** [nvjob.github.io/support](https://nvjob.github.io/support)
 
-**Report a Problem / Issue Tracker / FAQ:** https://nvjob.github.io/reportaproblem
+**Report a Problem / Issue Tracker / FAQ:** [nvjob.github.io/reportaproblem](https://nvjob.github.io/reportaproblem)
