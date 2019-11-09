@@ -1,7 +1,5 @@
-# #NVJOB Simple Pool
-### [nvjob.github.io/unity/nvjob-simple-pool](https://nvjob.github.io/unity/nvjob-simple-pool)
-
-Version 1.2.1
+# #NVJOB Simple Pool 1.2.1
+#### [nvjob.github.io/unity/nvjob-simple-pool](https://nvjob.github.io/unity/nvjob-simple-pool)
 
 This is a simple pool for optimizing object loading.<br>
 All objects in the pool are loaded during initialization, and then retrieved from the pool and returned back to the pool without sacrificing performance.<br>
